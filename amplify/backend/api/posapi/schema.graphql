@@ -1,0 +1,26 @@
+type Order @model {
+  id: ID!
+  total: Float
+  subtotal: Float
+  tax: Float
+  createdAt: String!
+  lineItems: [LineItem] @connection(name: "OrderLineItems")
+}
+
+type LineItem @model {
+  id: ID!
+  qty: Int
+  order: Order @connection(name: "OrderLineItems")
+  product: Product @connection
+  description: String
+  price: Float
+  total: Float
+}
+
+type Product @model {
+  id: ID
+  sku: String
+  name: String
+  price: Float
+  image: String
+}
