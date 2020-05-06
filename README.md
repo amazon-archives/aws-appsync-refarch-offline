@@ -2,6 +2,8 @@
 
 This repository contains the code for a mobile app written in React Native that uses Amplify DataStore and AWS AppSync to provide offline and delta sync capabilities. Use this repository as an example to build your own application. 
 
+Read the Blog Post about this project for more information: [AWS AppSync offline reference architecture – powered by the Amplify DataStore](https://aws.amazon.com/blogs/mobile/aws-appsync-offline-reference-architecture).
+
 ## Point of Sale
 
 The theme of this mobile application is a Point of Sale (POS) for a Coffee Shop. What better use case for offline capabilities than a POS app that handles sales and transactions. These type of applications are critical for a business and is important that they handle internet outages and data synchronization gracefully while continue to process transactions.  
